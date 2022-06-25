@@ -3,10 +3,11 @@ using CommanderGQL.Models;
 
 namespace CommanderGQL.Data{
     public class AppDbContext : DbContext{
+
         public AppDbContext(DbContextOptions options) : base(options){
 
         }
 
-        public DbSet<Platform> Platforms { get; set; }
+        public DbSet<Platform>? Platforms { get; set; }
     }
 }
